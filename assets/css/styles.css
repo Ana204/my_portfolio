@@ -90,7 +90,7 @@ header .menu-line{
     flex: 1;
     background-color: #FFF;
     background-image: url('../images/hero.jpg');
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center top;
 }
 
@@ -107,4 +107,60 @@ footer {
 
 footer a{
     color: #FFF;
+}
+
+@media (max-width: 850px){
+
+    header{
+        position: initial;
+        background-color: #3B576D;
+    }
+
+    .container{
+        flex-direction: column;
+        height: calc(100vh - 63px);;
+    }
+
+    .container .leftside{
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header .menu-line{
+        background-color: #FFF;
+    }
+
+    footer{
+        position: initial;
+        color: #333;
+    }
+
+    footer a {
+        color: #333;
+    }
+  
+}
+
+@media (max-width: 490px){
+
+    .container .leftside .info .name{
+        font-weight: bold;
+        font-size: 60px;
+    }
+
+    .container .leftside .info .buttons a{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+    footer a{
+        font-size: 12px;
+    }
 }
